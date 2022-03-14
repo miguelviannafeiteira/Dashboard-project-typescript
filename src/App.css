@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+/* Estilos gerais */
+
+ul,
+li,
+a,
+div,
+p,
+h2,
+h1,
+h3,
+button,
+body {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: Rubik;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  display: block;
+  text-transform: lowercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Perfil */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg {
+  background: hsl(226, 43%, 10%);
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.titulo {
+  position: absolute;
+  top: 130px;
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ladoEsquerdo {
+  position: relative;
+  top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info {
+  background: hsl(246, 80%, 60%);
+  width: 280px;
+  height: 350px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+img {
+  width: 90px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin: 25px 0 25px 25px;
+}
+
+.pessoal {
+  margin-top: 10px;
+  margin-left: 30px;
+  color: #fff;
+}
+
+.pessoal p {
+  font-weight: 300;
+  font-size: 14px;
+}
+.pessoal h1 {
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.links {
+  background: hsl(235, 46%, 20%);
+  width: 280px;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+  bottom: 7px;
+  padding: 10px 0 10px 0;
+}
+
+.links a {
+  margin: 30px 0 20px 30px;
+  cursor: pointer;
+  color: hsl(235, 45%, 61%);
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.link.active {
+  color: #fff;
+}
+
+/* Horas */
+
+.lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-left: 30px;
+  align-self: center;
+}
+
+.Work {
+  position: relative;
+  top: 10px;
+  height: 60px;
+  width: 260px;
+  border-radius: 10px 10px 0 0;
+  background-image: url(./images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: hsl(15, 100%, 70%);
+}
+.Play {
+  position: relative;
+  top: 10px;
+  height: 60px;
+  width: 260px;
+  border-radius: 10px 10px 0 0;
+  background-image: url(./images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: hsl(195, 74%, 62%);
+}
+.Study {
+  position: relative;
+  top: 10px;
+  height: 60px;
+  width: 260px;
+  border-radius: 10px 10px 0 0;
+  background-image: url(./images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: hsl(348, 100%, 68%);
+}
+.Exercise {
+  position: relative;
+  top: 10px;
+  height: 60px;
+  width: 260px;
+  border-radius: 10px 10px 0 0;
+  background-image: url(./images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: hsl(145, 58%, 55%);
+}
+.Social {
+  position: relative;
+  top: 10px;
+  height: 60px;
+  width: 260px;
+  border-radius: 10px 10px 0 0;
+  background-image: url(./images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: hsl(264, 64%, 52%);
+}
+.Self-Care {
+  position: relative;
+  top: 10px;
+  height: 60px;
+  width: 260px;
+  border-radius: 10px 10px 0 0;
+  background-image: url(./images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: hsl(43, 84%, 65%);
+}
+
+.lista li button {
+  position: relative;
+  background: hsl(235, 46%, 20%);
+  width: 260px;
+  height: 200px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.lista li button:hover {
+  background: hsl(235, 45%, 61%);
+}
+
+.lista li button h3 {
+  font-weight: 500;
+}
+
+.lista li button h1 {
+  font-weight: 300;
+  font-size: 4rem;
+  margin-top: 20px;
+}
+
+.lista li button p {
+  color: hsl(236, 100%, 87%);
+  margin-top: 10px;
 }
