@@ -14,6 +14,7 @@ const App: React.FC = () => {
 
   return (
     <div className="bg">
+      <h1>Hello World</h1>
       <div className="container">
         <div className="ladoEsquerdo">
           <div className="info">
