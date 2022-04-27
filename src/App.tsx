@@ -14,7 +14,6 @@ const App: React.FC = () => {
 
   return (
     <div className="bg">
-      <h1>Hello World</h1>
       <div className="container">
         <div className="ladoEsquerdo">
           <div className="info">
@@ -29,18 +28,21 @@ const App: React.FC = () => {
           </div>
           <div className="links">
             <a
+              data-testid="daily"
               className={cn('link', { active: tempo === 'daily' })}
               onClick={() => handleClick('daily')}
             >
               daily
             </a>
             <a
+              data-testid="weekly"
               className={cn('link', { active: tempo === 'weekly' })}
               onClick={() => handleClick('weekly')}
             >
               weekly
             </a>
             <a
+              data-testid="monthly"
               className={cn('link', { active: tempo === 'monthly' })}
               onClick={() => handleClick('monthly')}
             >
