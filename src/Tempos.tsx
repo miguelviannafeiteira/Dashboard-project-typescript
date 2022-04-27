@@ -29,7 +29,7 @@ const Tempos = ({ tempo }: TypeTempo) => {
     fetch('data.json')
       .then((response) => response.json())
       .then((json) => setDados(json))
-  }, [tempo])
+  }, [])
 
   if (dados === null) return null
   return (

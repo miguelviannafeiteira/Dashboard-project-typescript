@@ -9,8 +9,7 @@ import App from './App'
 
 describe('Form Component', () => {
   it('should exist Hello World', () => {
-    const { getByText } = render(<App />)
-    expect(getByText('Hello World')).toBeInTheDocument()
+    const { getByTestId } = render(<App />)
   }
   )
 })
